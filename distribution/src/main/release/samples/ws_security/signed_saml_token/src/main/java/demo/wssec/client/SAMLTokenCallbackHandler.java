@@ -53,7 +53,7 @@ public class SAMLTokenCallbackHandler implements CallbackHandler {
             samlCallback.setIssuer(issuer);
             samlCallback.setIssuerFormat("urn:oasis:names:tc:SAML1.1:nameid-format:unspecified");
             samlCallback.setCanonicalizationAlgorithm(CanonicalizationMethod.EXCLUSIVE_WITH_COMMENTS);
-            samlCallback.setSignAssertion(false);
+            samlCallback.setSignAssertion(true);
             samlCallback.setIssuerCrypto(issuerCrypto);
             samlCallback.setIssuerKeyName(issuerKeyName);
             samlCallback.setIssuerKeyPassword(issuerKeyPassword);

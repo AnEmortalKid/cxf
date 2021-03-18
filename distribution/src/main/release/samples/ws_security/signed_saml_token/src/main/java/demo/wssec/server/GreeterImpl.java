@@ -25,7 +25,7 @@ import org.apache.cxf.hello_world_soap_http.Greeter;
 @javax.jws.WebService(serviceName = "GreeterService",
             portName = "GreeterPort",
             endpointInterface = "org.apache.cxf.hello_world_soap_http.Greeter",
-            wsdlLocation = "file:/Users/jm034719/workspaces/saml/cxf/distribution/src/main/release/samples/ws_security/signed_saml_token/wsdl/hello_world_wssec.wsdl",
+            wsdlLocation = "file:./wsdl/hello_world_wssec.wsdl",
             targetNamespace = "http://cxf.apache.org/hello_world_soap_http")
 
 public class GreeterImpl implements Greeter {

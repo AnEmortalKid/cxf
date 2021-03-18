@@ -48,7 +48,8 @@ public class Server {
 
         Map<String, Object> inProps = new HashMap<>();
 
-        inProps.put("action", "SAMLTokenSigned");
+        // TODO work around here is to add Signature to the actions
+        inProps.put("action", "SAMLTokenSigned Signature");
         inProps.put("passwordCallbackClass", "demo.wssec.server.UTPasswordCallback");
         inProps.put("signaturePropFile", "etc/Server_SignVerf.properties");
 
